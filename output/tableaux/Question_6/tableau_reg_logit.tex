@@ -1,0 +1,52 @@
+\begin{table}[htbp]
+\centering
+\caption{Régression logistique -- Satisfaction globale des \'etudiants de l'UNB}
+\label{tab:logit_sat}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Variables} & \textbf{Odds Ratio} & \textbf{p $>$ z} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Sexe}} \\
+\quad Féminin & Référece & -- \\
+\quad Masculin & 0.71 & 0.019** \\
+\midrule
+\multicolumn{3}{l}{\textbf{Âge}} \\
+\quad 19-20 & R\'ef. & -- \\
+\quad 21-22 & 1.34 & 0.505NS \\
+\quad 23-24 & 1.25 & 0.613NS \\
+\quad 25-26 & 1.69 & 0.265NS \\
+\midrule
+\multicolumn{3}{l}{\textbf{Niveau d'\'etude}} \\
+\quad Licence & R\'ef. & -- \\
+\quad Master & 0.60 & 0.296NS \\
+\quad Doctorat & 1.00 & .NS \\
+\midrule
+\multicolumn{3}{l}{\textbf{\'Etablissement}} \\
+\quad ESI & R\'ef. & -- \\
+\quad IDR & 4.34 & 0.002*** \\
+\quad INSSA & 3.07 & 0.036** \\
+\quad IUT & 6.01 & 0.000*** \\
+\quad UFR-SEA & 4.92 & 0.001*** \\
+\quad UFR-SHLAM & 7.38 & 0.000*** \\
+\quad UFR-SJPEG & 4.87 & 0.001*** \\
+\quad UFR-SVT & 4.14 & 0.002*** \\
+\midrule
+Constante & 0.21 & 0.037** \\
+\midrule
+\multicolumn{3}{l}{\textbf{Statistiques du mod`ele}} \\
+Nombre d'observations & \multicolumn{2}{c}{891} \\
+Log likelihood & \multicolumn{2}{c}{-578.38} \\
+LR chi2(15) & \multicolumn{2}{c}{57.63} \\
+Prob $>$ chi2 & \multicolumn{2}{c}{0.000} \\
+Pseudo R\textsuperscript{2} & \multicolumn{2}{c}{0.0512} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Test de Hosmer-Lemeshow}} \\
+\quad Hosmer-Lemeshow chi2(8) & \multicolumn{2}{c}{9.56} \\
+\quad Prob $>$ chi2 & \multicolumn{2}{c}{.} \\
+\midrule
+Aire sous la courbe ROC (AUC) & \multicolumn{2}{c}{0.6385} \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize \textbf{***} : significativit\'e au seuil de 1\% \quad \textbf{**} : au seuil de 5\% \quad \textbf{*} : au seuil de 10\% \quad \textbf{NS} : non significatif} \\
+\multicolumn{3}{l}{\footnotesize \textit{p $>$ z} : la p-value associ\'ee au test de Wald} \\
+\end{tabular}
+\end{table}
